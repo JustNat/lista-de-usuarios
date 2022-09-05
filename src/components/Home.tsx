@@ -20,7 +20,14 @@ const Home = () => {
                 <Grid container rowSpacing={6} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
                     {users.map((user) => (
                         <Grid key={user.id} item xs={6}>
-                            <Link href={`/tasks/${user.id}?name=${user.name}`}> Nome: {user.name} <Typography>Frase do fuboca: {user.company.catchPhrase}</Typography> </Link>
+                            <Link href={`/tasks/${user.id}?name=${user.name}`} sx={{ textDecoration: 'none', color: 'inherit' }}>
+                                <Typography>
+                                    Nome: {user.name}
+                                </Typography>
+                                <Typography>
+                                    Frase do fuboca: {user.company.catchPhrase}
+                                </Typography>
+                            </Link>
                         </Grid>
                     ))}
                 </Grid>

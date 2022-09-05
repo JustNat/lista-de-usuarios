@@ -25,7 +25,7 @@ const Tasks = () => {
 
             <Link href={`/posts/${id}?name=${name}`}>
                 <Button>
-                    <Typography>Ver Posts</Typography>
+                    <Typography sx={{ textDecoration: 'none', color: 'white' }}>Ver Posts</Typography>
                 </Button>
             </Link>
 
